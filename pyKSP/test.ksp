@@ -1,0 +1,36 @@
+# Simple configuration file for the K-Shortest Paths tracker
+
+
+# The grid has a resolution of 28 x 28 cells.
+
+GRID 28 28
+
+
+# Process frames 0 to 1499.
+
+FRAMES 0 1499
+
+
+# List of grid cells that can act as access point, that is from which
+# objects can enter or exit. In this example, there are four.
+
+ACCESS_POINTS 139,167,195,223
+
+
+# Maximum allowed movement in grid cells between two consecutive time
+# frames.
+
+DEPTH 1
+
+
+# Maximum allowed number of trajectories.
+
+MAX_TRAJ 255
+
+
+# Input frames file format. Every file contains the grid occpuancy
+# probabilities for a specific time frame. A probability file contains
+# at every line the number of the grid cell and its marginal
+# probability of occupancy.
+
+INPUT_FORMAT proba/proba-f%d.dat
