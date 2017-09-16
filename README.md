@@ -16,4 +16,4 @@ following article:
 Jerome Berclaz, Francois Fleuret, Engin Turetken and Pascal Fua,
 "Multiple Object Tracking using K-Shortest Paths Optimization", IEEE
 Transactions on Pattern Analysis and Machine Intelligence (TPAMI),
-2011, to be published.
+2011.
