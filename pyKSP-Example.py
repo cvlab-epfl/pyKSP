@@ -18,7 +18,7 @@ def get_fake():
 def convert_v(v,dims,depth):
     # To convert the output of KSP into tracks format
     MAP = np.zeros(dims)
-    n_tracks = len(v)/(depth)
+    n_tracks = len(v) // depth
     out = np.zeros((depth,n_tracks,2))
     for t in range(depth-1):
         for i in range(n_tracks):
@@ -51,12 +51,12 @@ for t in range(0,depth):
     
 access_points = np.asarray([0]) # Define the access points on your grid
 G = pyKShorthestPathGraph(q_vector,36,37,depth,4,access_points) #Be carefull ordering of dimensions inverted
-v = G.getPath(0,depth-1) # From_frame - To_frame (inclusive). Be carrefull if you set To_frame>depth - 1, you get a memory leak
-print v
+v = G.getPath(0,depth-1) # From_frame - To_frame (inclusive). Be carreful if you set To_frame>depth - 1, you get a memory leak
+print(v)
 del G
 
 
 # Convert output to a "tracks" format
 out = convert_v(v,(37,36),depth)
-print out
+print(out)
 
