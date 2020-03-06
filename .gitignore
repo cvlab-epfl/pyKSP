@@ -1,3 +1,8 @@
-.so
-.o
+*.so
+*.o
 .dat
+.DS_Store
+
+pyKSP/build
+
+.ipynb_checkpoints
